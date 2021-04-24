@@ -18,12 +18,13 @@ Right panel can add new people.
 
 ### Learnings
 
-> Sockets (chat engine) 
-> Hooks 
-> State
-> React 
-> JavaScript
+- Sockets (chat engine) 
+- Hooks 
+- State
+- React 
+- JavaScript
 
 ## Backend
 
 Backend will be hosted by (Chat engine)[https://chatengine.io]
+
