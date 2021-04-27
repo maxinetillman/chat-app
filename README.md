@@ -26,5 +26,5 @@ Right panel can add new people.
 
 ## Backend
 
-Backend will be hosted by (Chat engine)[https://chatengine.io]
+Backend will be hosted by [Chat engine](https://chatengine.io)
 
