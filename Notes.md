@@ -120,7 +120,7 @@ const chat = chats && chats[activeChat]
             }
             - new div under message-block which will have classname of read-receipts
             - inline style will change depending on whos message is read 
-14. Message Form component
+15. Message Form component
     - need a form (className message-form)
         - onSubmit handler will call handle submit handler 
     - inside form, need an input  
@@ -147,7 +147,7 @@ const chat = chats && chats[activeChat]
 
 ** Can now send new messages **
 
-15. Message Form - Adding Ability to Send Images
+16. Message Form - Adding Ability to Send Images
     - Within the form, add a label under the input
         - htmlFor - upload-button
         - span with class image-button
@@ -171,3 +171,34 @@ const chat = chats && chats[activeChat]
 
 ** Now user can click icon of image or attachment and send files **
 
+17. Read receipts  
+    - in Chat Feed component, function renderReadReceipts created
+    - renderReadReceipts takes two parameters - messages, isMyMessage 
+    - inside we will map over the people that read messages
+        - chat.people.map paramets take in person and index
+        - in map code block we want to render the people who read it
+        - if person has read message then we will create empty div
+            - key is read index
+            - className is read-receipt
+            - Styles added to appear 
+            - Background image will be that of the sender as per their message code 
+        - && () < means it will only render if person has read the message 
+        - return this map 
+
+    - Replace 'render receipts' in render to this function
+    - icon will now show when message read
+
+18. Changing Users Manual
+
+    - Can manually change by inputting second user detail in App.js 
+
+19. Log in Form 
+
+    - New component, Log In Form 
+    - useState for username
+    - useState for password
+    - import axios 
+
+    - in Log In Form, in return, need to add a form with 
+    input to add username and password
+    
